@@ -127,53 +127,60 @@
     </div>
   </section>
 
-  <div class="background">
-    <section id="order" class="container text-center">
-      <div class="content-header">
-        <h1 class="section-title display-4">You can order by</h1>
-        <hr>
+  <section id="order" class="container text-center">
+    <div class="content-header">
+      <h1 class="section-title display-4">You can order by</h1>
+      <hr>
+    </div>
+    <div class="row align-items-center">
+      <div class="col-lg-4">
+        <img src="assets/images/gofud.png" alt="" width="80%">
       </div>
-      <div class="row align-items-center">
-        <div class="col-lg-4">
-          <img src="assets/images/gofud.png" alt="" width="80%">
-        </div>
-        <div class="col-lg-4">
-          <img src="assets/images/shopeefood.png.png" alt="" width="80%">
-        </div>
-        <div class="col-lg-4">
-          <img src="assets/images/grabfood.png" alt="" width="80%">
-        </div>
-      </div>  
-    </section>
-  </div>
+      <div class="col-lg-4">
+        <img src="assets/images/shopeefood.png.png" alt="" width="80%">
+      </div>
+      <div class="col-lg-4">
+        <img src="assets/images/grabfood.png" alt="" width="80%">
+      </div>
+    </div>  
+  </section>
 
-  <section id="contact" class="container">
-    <div class="content-header text-center">
+  <section id="contact" class="container background">
+    <div class="content-header text-center pb-3">
       <h1 class="section-title display-4">Contact Us</h1>
       <hr>
     </div>
-    <div class="content-body">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <img class="profile-contact" src="assets/images/contact.jpg" alt="" width="450px" height="500px">  
+    <div class="content-body px-5">
+      <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Full Name" name="full_name" required>
+          </div>
+          <div class="col">
+            <input type="email" class="form-control" placeholder="Email" name="email" required>
+          </div>
         </div>
-        <div class="col-lg-6 social-media">
-          <div class="col p-3">
-            <img src="assets/images/contact-ig.png" alt="" width="10%">                  
-            <a class="contact-link" href="">@Daikohi</a>
+        <div class="row mt-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Phone" name="phone" pattern="[0-9]{10,12}" required>
           </div>
-          <div class="col p-3">
-            <img src="assets/images/contact-whatsapp.png" alt="" width="10%">                  
-            <a class="contact-link" href="">+62 89232374</a>
+          <div class="col">
+            <div class="form-group">
+              <select id="inputState" class="form-control" name="subject">
+                <option selected>----- Subject -----</option>
+                <option value="reservation">Reservation</option>
+                <option value="bussiness">Bussiness</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
           </div>
-          <div class="col p-3">
-            <img src="assets/images/contact-gmail.png" alt="" width="10%">
-            <a class="contact-link" href="">daikohi@gmail.com</a>      
-          </div>
-        </div>                
-      </div>
-    </div>
-  
+        </div>
+        <div class="form-group">          
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark btn-lg">Submit</button>
+      </form>
+    </div>  
   </section>
 
   <footer>
@@ -183,12 +190,12 @@
         <div class="col-lg-9">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis distinctio, quae quaerat deserunt nesciunt incidunt maxime ea dolorem accusantium nostrum, debitis aliquid, fugit est ipsa perspiciatis! Qui magnam nihil et iusto magni, labore ab ipsam laudantium, esse quasi alias sequi unde ipsum cumque debitis aspernatur. Provident a, dignissimos quod voluptatibus nemo sequi consequuntur dolore natus suscipit sit eius cupiditate necessitatibus quae debitis, reprehenderit vel, ipsum id placeat quia aperiam labore odit! Ipsam iste repellendus dolorum non eum officia illo optio accusantium rem itaque ex esse voluptas laudantium voluptate laboriosam aliquam cupiditate, perspiciatis maiores nostrum consequuntur aliquid. Animi cumque commodi consectetur!</p>
         </div>
-        <div class="col-lg-2">
+        <div class="col-lg-2">          
           <a class="row" href="#">Home</a>
           <a class="row" href="#menu">Menu</a>
           <a class="row" href="#order">Order</a>
           <a class="row" href="#contact">Contact Us</a>
-          <div class="row justify-content-between mt-3">
+          <div class="row justify-content-around mt-3">
             <img src="assets/images/contact-ig.png" alt="" width="40px">
             <img src="assets/images/contact-whatsapp.png" alt="" width="40px">
             <img src="assets/images/contact-gmail.png" alt="" width="40px">
@@ -197,6 +204,10 @@
       </div>
     </div>
   </footer>
+
+
+
+
 
 
   <script src="assets/javascript/script.js"></script>
